@@ -1,6 +1,6 @@
-//Welcome to the Arduino Nano Pin tester
+//Welcome to the Arduino Uno Pin tester
 /** 
-The Arduino Nano is a development board designed and manufactured by the 
+The Arduino Uno is a development board designed and manufactured by the 
 Arduino Team in Italy. The board is used for prototyping small scale projects
 that require little computing power.
 
@@ -20,8 +20,8 @@ What's on the board
 12 Automatic Voltage Regulator
 
 
-What you need to Test your Arduino Nano Board
-*An Arduino Nano Board
+What you need to Test your Arduino Uno Board
+*An Arduino Uno Board
 *A USB Cable
 *Jumper Wires "Male to Male"
 *A Breadboard
@@ -30,21 +30,22 @@ What you need to Test your Arduino Nano Board
 
 
  **/
-
-
 int i;
 void setup() {
   // put your setup code here, to run once:
-for(i=0;i<=13;i++){pinMode(i,OUTPUT);}
+for(i=0;i<=52;i++){
+  pinMode(i,OUTPUT);             
+  }
+  Serial.begin(9600);            //Serial begin is used to Initial coomunication With the Serial monitor Located under tools.
 }
 
 
-void loop() {
-  // put your main code here, to run repeatedly:
-while(5<6)
-for(i=0;i<=13;i++){
-  digitalWrite(i,HIGH);
+void loop()// Void loop is a built function used for repeating all code inside it.
+{                         
+while(5<6){
+  for(i=0;i<=52;i++)
+  {
+  digitalWrite(i,HIGH); 
+  }        
 }
-}
-
 }
