@@ -28,8 +28,17 @@ What you need to Test your Arduino Uno Board
 *An LED "any color" 3.3v/5v Norminal
 *A Computer / PC / Desktop, 
 
+/*
+Program Function:
+This program simply makes all 14pins HIGH on the Arduino UNO 
+and all 54 digital Pins on the Arduino Due HIGH also.
 
- **/
+Simply attached your arduino board to your computer (Mac/ Windows)
+and select upload.
+
+
+
+*/
 int i;
 void setup() {
   // put your setup code here, to run once:
