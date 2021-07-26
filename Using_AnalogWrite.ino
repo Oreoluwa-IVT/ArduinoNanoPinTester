@@ -2,7 +2,7 @@ int a=A0; // assigning our Analog Pin "A0" as  "a "
 int b=9; //  assigning our Digital pin , Led pin "9" as  " b "
 void setup() { 
   // put your setup code here, to run once:
-Serial.begin(9600); // We instantiated Serial communication between the Arduino and the computer at 9600 bauds per second
+Serial.begin(9600); // We instantiated Serial communication between the Arduino and the computer at 9600 bits per second
 pinMode(b,OUTPUT); //  Pin 9/b is configured as an OUTPUT digital pin
 }
 
