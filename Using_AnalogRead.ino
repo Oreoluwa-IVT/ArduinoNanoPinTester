@@ -2,7 +2,7 @@
 int zero = A0;
 void setup() {
   // put your setup code here, to run once:
-Serial.begin(9600); // Serial Monitor is being initiated for Serial communication between the arduion and the computer
+Serial.begin(9600); // Serial Monitor is being initiated for Serial communication between the arduino and your computer
 }
 
 void loop() {
