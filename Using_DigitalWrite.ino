@@ -1,14 +1,19 @@
-int pin1 =2; // We assigned Digitalpin "2" with variable name "pin1"
-
+int pin1=9; // Digital pin9 is declared as pin1 here. This will function as our button input
+int pin2=3; // Digital pin3 is declared as pin2 here. This will function as our output pin for our led
 void setup() {
   // put your setup code here, to run once:
-pinMode(pin1,OUTPUT); // pin1 is configured as an OUTPUT pin
+pinMode(
+pinMode(pin1,INPUT);
+pinMode(pin2,OUTPUT);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-digitalWrite(pin1,HIGH);  // pin1, is keep HIGH , meaning voltage is applied to the pin
-delay(500);  // the pin is keep high for 500milliseconds
-digitalWrite(pin1,LOW);  // pin1 is keep LOW, meaning there's no voltage applied 
-delay(500); // the previous line is delayed for 500 millisecond.
+if (pin1==HIGH){
+  digitalWrite(pin2,HIGH); // The pin is set high here. LED light up. (if connected properly).
+}
+else{
+  digitalWrite(pin2,LOW); // The pin is set low here. Meaning there's no power supply on this pin
+}
+
 }
