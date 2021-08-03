@@ -1,4 +1,5 @@
 #include <Servo.h> //
+//pinouts Brown = Ground , Red=Power ,yellow = Control line/digitalpin
 Servo newServo;
 int potpin = A0;  // this pin is connected to the A0 AnalogPin
 int val;    //   // this variable reads the data from the analogRead function
