@@ -17,5 +17,6 @@ val=analogRead(potpin);
 int val2=map(val,0,1023,0,180);
 newServo.write(val2);
 delay(15);
-Serial.println("Servo Angle:",val2);
+Serial.print("Servo Angle\t");
+Serial.println(val2);
 } 
