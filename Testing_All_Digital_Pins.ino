@@ -39,7 +39,7 @@ and select upload.
 
 
 */
-int i;
+const int i;
 void setup() {
   // put your setup code here, to run once:
 for(i=0;i<=54;i++){
