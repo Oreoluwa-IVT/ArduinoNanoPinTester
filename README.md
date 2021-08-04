@@ -16,6 +16,7 @@ Whilst using Actuators, we get to see the resultant effect of these electrical s
 - [ ] Dc motors 
 - [ ] Servos #
 - [ ] LEDs
+- [ ] Stepper Motors + Motor Driver
 
 
 
